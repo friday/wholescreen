@@ -71,6 +71,10 @@ The API was designed to generally use the same names as the standard API (withou
 | `on()`      | `type`, `listener`, `options` | Listen for wholescreen events. Works exactly like [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener), except it (only) supports custom wholescreen event types `change` and `error` |
 | `off()`     | `type`, `listener`, `options` | Remove wholescreen event listener. Works exactly like [removeEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener), except it (only) supports custom wholescreen event types `change` and `error` |
 
+### Browser API
+
+If you need to get the original method and property names for the current browser, these are available as `wholescreen._events` and `wholescreen._props`
+
 ## Support
 
 [Browsers support](https://caniuse.com/#feat=fullscreen)

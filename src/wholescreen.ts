@@ -4,6 +4,8 @@ interface IWholescreen {
 	readonly supported: boolean;
 	readonly active: boolean;
 	readonly element: Node;
+	_events: {change: string, error: string};
+	_props: {element: string, exit: string, request: string, supported: string};
 	request(element?: Node): void;
 	exit(): void;
 	toggle(element?: Node, active?: boolean): void;
@@ -12,6 +14,8 @@ interface IWholescreen {
 }
 
 const wholescreen: IWholescreen = {
+	_events: events,
+	_props: props,
 	get active() {
 		return Boolean(document[props.element]);
 	},
