@@ -1,11 +1,11 @@
 {
-	"name": "wholescreen",
+	"name": "wholescreen.js",
 	"version": "0.1.0",
 	"description": "Minimal cross-browser wrapper of the Fullscreen API. Handles vendor prefixes for you!",
 	"author": "Albin Larsson",
 	"license": "MIT",
 	"repository": "git+https://github.com/friday/wholescreen.git",
-	"main": "dist/wholescreen.umd.js",
+	"main": "dist/wholescreen.js",
 	"types": "dist/wholescreen.d.ts",
 	"scripts": {
 		"build": "tsc && rollup --config; mv .js/wholescreen.d.ts dist && rimraf .js",

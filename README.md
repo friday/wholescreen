@@ -1,5 +1,3 @@
-[![NPM](https://img.shields.io/npm/v/wholescreen.svg)](https://www.npmjs.com/package/wholescreen)
-![travis](https://img.shields.io/travis/friday/wholescreen.svg)
 ![devDependency Status](https://img.shields.io/david/dev/friday/wholescreen.svg)
 ![size](https://img.shields.io/github/size/friday/wholescreen/wholescreen.ts.svg)
 ![license](https://img.shields.io/github/license/friday/wholescreen.svg)
