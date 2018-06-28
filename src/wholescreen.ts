@@ -25,7 +25,7 @@ const wholescreen: IWholescreen = {
 	get supported() {
 		return Boolean(document[props.supported]);
 	},
-	toggle: (element, enable = !wholescreen.element) => (enable ? wholescreen.request : wholescreen.exit)(element),
+	toggle: (element, enable = !wholescreen.element) => (enable ? wholescreen.request(element) : wholescreen.exit()),
 };
 
 export default wholescreen;
