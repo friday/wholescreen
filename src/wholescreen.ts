@@ -18,10 +18,10 @@ const wholescreen: IWholescreen = {
 	get element() {
 		return document[props.element] || null;
 	},
-	exit: () => document[props.exit](),
+	exit: () => props.exit && document[props.exit](),
 	off: (type, listener, options) => events[type] && document.removeEventListener(events[type], listener, options),
 	on: (type, listener, options) => events[type] && document.addEventListener(events[type], listener, options),
-	request: element => element[props.request](),
+	request: element => props.request && element[props.request](),
 	get supported() {
 		return Boolean(document[props.supported]);
 	},
