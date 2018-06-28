@@ -11,7 +11,7 @@
 		"build": "tsc && rollup --config; mv .js/wholescreen.d.ts dist && rimraf .js",
 		"lint": "tsc --noEmit && tslint --project tsconfig.json --format stylish",
 		"prebuild": "rimraf dist",
-		"preversion": "npm build",
+		"preversion": "npm run-script build",
 		"postversion": "git push && git push --tags"
 	},
 	"keywords": [
