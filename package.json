@@ -1,6 +1,6 @@
 {
 	"name": "wholescreen.js",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Minimal cross-browser wrapper of the Fullscreen API. Handles vendor prefixes for you!",
 	"author": "Albin Larsson",
 	"license": "MIT",
