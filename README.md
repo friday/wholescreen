@@ -1,17 +1,18 @@
-[![NPM](https://img.shields.io/npm/v/wholescreen.js.svg)](https://www.npmjs.com/package/wholescreen.js)
-![travis](https://img.shields.io/travis/friday/wholescreen.svg)
-![size](https://img.shields.io/bundlephobia/minzip/wholescreen.js.svg)
-![license](https://img.shields.io/github/license/friday/wholescreen.svg)
-![types](https://img.shields.io/npm/types/wholescreen.js.svg)
+[![](https://img.shields.io/npm/v/wholescreen.js.svg)](https://www.npmjs.com/package/wholescreen.js)
+![](https://img.shields.io/travis/friday/wholescreen.svg)
+![](https://img.shields.io/bundlephobia/minzip/wholescreen.js.svg)
+![](https://img.shields.io/github/license/friday/wholescreen.svg)
+![](https://img.shields.io/npm/types/wholescreen.js.svg)
 
 # wholescreen.js
 Tiny wrapper (~40 lines of code) for the [Fullscreen API](https://developer.mozilla.org/en/DOM/Using_full-screen_mode). 
 
-* Handles vendor prefixes for you
-* Supports ES6 modules, require.js and AMD
-* Comes with TypeScript definitions (since it's written in TypeScript)
+* Handles all vendor prefixes for you
 * Has a simple [API](#api) that resembles the standard API
-* Probably the smallest existing Fullscreen API wrapper that supports all vendor prefixes (but they're all pretty small)
+* Supports [UMD](https://github.com/umdjs/umd), standalone ES6 modules, require.js and AMD as separate files so you can import it anwhere.
+* Comes with TypeScript definitions (since it's written in TypeScript)
+* Detects each of the browser properties individually, meaning wider support, and safer for browser changes. All while using less code.
+* Probably the smallest Fullscreen API wrapper (but they're all pretty small)
 
 ## Installation
 
@@ -50,7 +51,7 @@ if (wholescreen.supported) {
 
 ## API
 
-The API is generally using the same names as the standard API. For example `requestFullscreen` -> `wholescreen.request()` and `exitFullscreen` -> `wholescreen.exit()`. However `fullscreenEnabled` has  been renamed to `supported` since the standard name is misleading.
+The API was designed to generally use the same names as the standard API (without the word `fullscreen` in everything since it's implied). There is one exception: `fullscreenEnabled` was renamed to `supported`, to avoid the misleading standard name. It also has a couple of useful additions over the standard API.
 
 ### Getters
 
@@ -75,5 +76,5 @@ The API is generally using the same names as the standard API. For example `requ
 [Browsers support](https://caniuse.com/#feat=fullscreen)
 
 ## Alternatives
-* [screenfull.js](https://github.com/sindresorhus/screenfull.js) - The first and most well used Fullscreen API wrapper. Supports commonjs. The wholescreen.js API is very similar to screenfull.js (not by intention).
-* [fscreen](https://github.com/rafrex/fscreen) - Small, written as a es6-module. Doesn't support some older prefixes (but you most likely can do without them). The API is a lot more verbose than screenfull.js and wholescreen.js
+* [screenfull.js](https://github.com/sindresorhus/screenfull.js) - The first and most well used Fullscreen API wrapper. Uses commonjs module declaration. The wholescreen.js API is very similar to screenfull.js (not by intention). screenfull also support the legacy syntax with an additional optional argument for allowing keyboard input.
+* [fscreen](https://github.com/rafrex/fscreen) - Small alternative. Handles all the common prefixes, but not the older Safari ones (you can most likely do without them). Uses es6-module declaration. The API is more verbose than screenfull.js and wholescreen.js
