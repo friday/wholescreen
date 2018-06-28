@@ -4,9 +4,9 @@ interface IWholescreen {
 	readonly supported: boolean;
 	readonly active: boolean;
 	readonly element: Node;
-	request(element: Node): void;
+	request(element?: Node): void;
 	exit(): void;
-	toggle(element: Node): void;
+	toggle(element?: Node, active?: boolean): void;
 	on(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
 	off(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
 }
@@ -21,7 +21,7 @@ const wholescreen: IWholescreen = {
 	exit: () => props.exit && document[props.exit](),
 	off: (type, listener, options) => events[type] && document.removeEventListener(events[type], listener, options),
 	on: (type, listener, options) => events[type] && document.addEventListener(events[type], listener, options),
-	request: element => props.request && element[props.request](),
+	request: element => props.request && (element || document.documentElement)[props.request](),
 	get supported() {
 		return Boolean(document[props.supported]);
 	},
