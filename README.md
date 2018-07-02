@@ -26,6 +26,11 @@ Or
 yarn add wholescreen.js
 ```
 
+Or you can use the CDN link
+```html
+<script src="https://unpkg.com/wholescreen.js/dist/wholescreen.min.js"></script>
+```
+
 ## Usage example
 ```js
 import wholescreen from 'wholescreen.js';
