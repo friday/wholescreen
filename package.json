@@ -5,10 +5,11 @@
 	"author": "Albin Larsson",
 	"license": "MIT",
 	"repository": "git+https://github.com/friday/wholescreen.git",
-	"main": "dist/wholescreen.js",
+	"module": "dist/wholescreen.es.js",
+	"browser": "dist/wholescreen.min.js",
 	"types": "dist/wholescreen.d.ts",
 	"scripts": {
-		"build": "tsc && rollup --config; mv .js/wholescreen.d.ts dist && rimraf .js",
+		"build": "tsc && rollup --config; cp .js/*.d.ts dist && rimraf .js",
 		"lint": "tsc --noEmit && tslint --project tsconfig.json --format stylish",
 		"prebuild": "rimraf dist",
 		"preversion": "npm run-script build",
