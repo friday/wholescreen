@@ -78,7 +78,7 @@ The API was designed to generally use the same names as the standard API (withou
 
 ### Browser API
 
-If you need to get the original method and property names for the current browser, these are available as `wholescreen._events` and `wholescreen._props`
+If you need to get the original method and property names for the current browser, these are available as `wholescreen.events` and `wholescreen.props`
 
 ## Support
 
