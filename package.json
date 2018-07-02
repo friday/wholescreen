@@ -11,8 +11,9 @@
 	"scripts": {
 		"build": "tsc && rollup --config; cp .js/*.d.ts dist && rimraf .js",
 		"lint": "tsc --noEmit && tslint --project tsconfig.json --format stylish",
-		"prebuild": "rimraf dist",
-		"preversion": "npm run-script lint && npm run-script build",
+		"prebuild": "rimraf dist && npm run-script lint",
+		"prepublishOnly": "npm run-script build",
+		"preversion": "npm run-script build",
 		"postversion": "git push && git push --tags"
 	},
 	"keywords": [
