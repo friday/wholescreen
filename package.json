@@ -19,8 +19,7 @@
 		"browser",
 		"prefixes",
 		"whole",
-		"screen",
-		"typescript"
+		"screen"
 	],
 	"files": [
 		"dist"
