@@ -27,6 +27,7 @@
 		"dist"
 	],
 	"devDependencies": {
+		"greenkeeper-lockfile": "^1.15.1",
 		"rimraf": "^2.6.1",
 		"rollup": "^0.62.0",
 		"rollup-plugin-terser": "^1.0.1",

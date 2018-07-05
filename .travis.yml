@@ -1,3 +1,5 @@
 language: node_js
 node_js: 'lts/*'
 script: yarn run build
+before_script: yarn run greenkeeper-lockfile-update
+after_script: yarn run greenkeeper-lockfile-upload
