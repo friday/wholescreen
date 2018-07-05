@@ -4,8 +4,8 @@ interface IWholescreen {
 	readonly supported: boolean;
 	readonly active: boolean;
 	readonly element: Node;
-	events: {change: string, error: string};
-	props: {element: string, exit: string, request: string, supported: string};
+	events: {change: string; error: string};
+	props: {element: string; exit: string; request: string; supported: string};
 	request(element?: Node): void;
 	exit(): void;
 	toggle(element?: Node, active?: boolean): void;
