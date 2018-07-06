@@ -16,6 +16,7 @@
 		"skipLibCheck": true
 	},
 	"files": [
+		"src/detect.ts",
 		"src/wholescreen.ts"
 	]
 }
