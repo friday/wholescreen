@@ -9,8 +9,8 @@
 	"browser": "dist/wholescreen.min.js",
 	"types": "dist/wholescreen.d.ts",
 	"scripts": {
-		"build": "tsc && rollup --config; cp .js/*.d.ts dist && rimraf .js",
-		"lint": "tsc --noEmit && tslint --project tsconfig.json --format stylish",
+		"build": "rollup --config",
+		"lint": "tslint --project tsconfig.json --format stylish",
 		"prebuild": "rimraf dist && npm run-script lint",
 		"prepublishOnly": "npm run-script build",
 		"preversion": "npm run-script build",
@@ -31,6 +31,7 @@
 		"rimraf": "^2.6.1",
 		"rollup": "^0.62.0",
 		"rollup-plugin-terser": "^1.0.1",
+		"rollup-plugin-typescript2": "0.15.0",
 		"tslint": "^5.10.0",
 		"typescript": "^2.9.0"
 	}
