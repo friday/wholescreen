@@ -10,7 +10,7 @@
 	"types": "dist/wholescreen.d.ts",
 	"scripts": {
 		"build": "rollup --config",
-		"lint": "tslint --project tsconfig.json --format stylish",
+		"lint": "npx prettier --write src/**/* && tslint --project tsconfig.json --format stylish",
 		"prebuild": "rimraf dist && npm run-script lint",
 		"prepublishOnly": "npm run-script build",
 		"preversion": "npm run-script build",
@@ -28,6 +28,7 @@
 	],
 	"devDependencies": {
 		"greenkeeper-lockfile": "^1.15.1",
+		"prettier": "^1.13.7",
 		"rimraf": "^2.6.1",
 		"rollup": "^0.62.0",
 		"rollup-plugin-terser": "^1.0.1",
