@@ -1,6 +1,6 @@
 [![](https://img.shields.io/npm/v/wholescreen.js.svg)](https://www.npmjs.com/package/wholescreen.js)
 [![](https://img.shields.io/travis/friday/wholescreen.svg)](https://travis-ci.org/friday/wholescreen/branches)
-[![](https://img.shields.io/bundlephobia/minzip/wholescreen.js.svg)](https://unpkg.com/wholescreen.js/dist/wholescreen.es.js)
+[![](https://img.shields.io/bundlephobia/minzip/wholescreen.js.svg)](https://cdn.jsdelivr.net/npm/wholescreen.js/dist/)
 [![](https://img.shields.io/github/license/friday/wholescreen.svg)](https://github.com/friday/wholescreen/blob/master/LICENCE)
 [![](https://img.shields.io/npm/types/wholescreen.js.svg)](https://www.typescriptlang.org/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/friday/wholescreen.svg)](https://greenkeeper.io/)
@@ -27,9 +27,9 @@ Or
 yarn add wholescreen.js
 ```
 
-Or you can use the CDN link
+Or you can use the [jsdelivr CDN](https://www.jsdelivr.com/package/npm/wholescreen.js)
 ```html
-<script src="https://unpkg.com/wholescreen.js/dist/wholescreen.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/wholescreen.js"></script>
 ```
 
 ## Usage example
