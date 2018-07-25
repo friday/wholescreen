@@ -5,6 +5,7 @@
 	"author": "Albin Larsson",
 	"license": "MIT",
 	"repository": "git+https://github.com/friday/wholescreen.git",
+	"main": "dist/wholescreen.umd.js",
 	"module": "dist/wholescreen.es.js",
 	"browser": "dist/wholescreen.min.js",
 	"types": "dist/wholescreen.d.ts",
