@@ -7,7 +7,7 @@ const formats = ['amd', 'cjs', 'es', 'umd'];
 
 const buildFile = (name, title = name) => {
 	const input = `src/${name}.ts`;
-	const banner = `/*! ${title} v${pkg.version} | (c) ${new Date().getFullYear()} ${pkg.author} | Licensed under ${pkg.license} */`;
+	const banner = `/*! ${title} v${pkg.version} | (c) 2018-${new Date().getFullYear()} ${pkg.author} | Licensed under ${pkg.license} */`;
 	return [
 		{
 			input,
