@@ -2,7 +2,14 @@ const prefix = ['', 'webkit', 'moz', 'ms', 'MS'];
 const fullscreen = ['fullscreen', 'Fullscreen', 'FullScreen'];
 
 function combine(parts: string[][]): string[] {
-	return parts.reduce((a, b) => [].concat.apply([], a.map(str1 => b.map(str2 => `${str1}${str2}`))), ['']);
+	return parts.reduce(
+		(a, b) =>
+			[].concat.apply(
+				[],
+				a.map(str1 => b.map(str2 => `${str1}${str2}`)),
+			),
+		[''],
+	);
 }
 
 function getProp(props: string[][], path?: string): string {
