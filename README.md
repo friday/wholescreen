@@ -3,7 +3,7 @@
 [![](https://img.shields.io/bundlephobia/minzip/wholescreen.js.svg)](https://cdn.jsdelivr.net/npm/wholescreen.js/dist/)
 [![](https://img.shields.io/github/license/friday/wholescreen.svg)](https://github.com/friday/wholescreen/blob/master/LICENCE)
 [![](https://img.shields.io/npm/types/wholescreen.js.svg)](https://www.typescriptlang.org/)
-[![Greenkeeper badge](https://badges.greenkeeper.io/friday/wholescreen.svg)](https://greenkeeper.io/)
+
 
 # wholescreen.js
 Tiny wrapper (~40 lines of code) for the [Fullscreen API](https://developer.mozilla.org/en/DOM/Using_full-screen_mode). 
